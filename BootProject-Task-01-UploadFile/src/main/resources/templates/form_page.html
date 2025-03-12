@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form method="post" enctype="multipart/form-data" action="/showData">
+        <input type="file" name="file" required>
+        <label> Row: </label>
+        <input type="number" name="row" min="0" value="0">
+        <label> Column: </label>
+        <input type="number" name="col" min="0" value="0">
+        <button type="submit">upload</button>
+    </form>
+</body>
+</html>

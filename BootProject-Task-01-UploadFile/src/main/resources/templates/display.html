@@ -1,0 +1,18 @@
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>File Data</title>
+</head>
+<body style="text-align: center">
+    <h2>Processed File Data</h2>
+    <div style="display:flex;justify-content:center">
+    <table border="1" >
+        <tr th:each="row : ${rows}">
+            <td th:each="col : ${row.columns}" th:text="${col}"></td>
+        </tr>
+    </table>
+    </div>
+    <br>
+    <a href="/">Upload Another File</a>
+</body>
+</html>
